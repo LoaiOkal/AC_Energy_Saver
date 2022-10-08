@@ -1,30 +1,3 @@
-esphome:
-  name: energysaverb
-
-esp32:
-  board: esp32doit-devkit-v1
-  framework:
-    type: arduino
-
-# Enable Home Assistant API
-api:
-  encryption:
-    key: "MbluvMOTy680oScONUZ298swz7+20kCTG/eRTZ/w6p4="
-
-ota:
-  password: "a9df87b3892bded3b82ba0454b2d4b99"
-
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "Energysaverb Fallback Hotspot"
-    password: "NjLzkMc5luIs"
-
-captive_portal:
-
 # Track bluetooth low energy devices using your ESP32 node.
 esp32_ble_tracker:
 
