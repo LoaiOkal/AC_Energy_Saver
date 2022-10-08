@@ -1,0 +1,13 @@
+alias: "Automation 10_ AC turned Off then turn AC_helper Off"
+description: "If the off button is pressed (the AC is turned off), then turn the boolean helper (AC_helper) off."
+trigger:
+  - platform: state
+    entity_id:
+      - button.off1
+condition: []
+action:
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.ac_on_off_helper
+mode: single
