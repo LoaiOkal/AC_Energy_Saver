@@ -104,7 +104,8 @@ Special modes:
 •	Sleep mode:
 
  While sleeping, there is no motions and sounds in the room, to avoid turning OFF the AC automatically by the automations we created, the user has to turn ON the sleep mode, so some automations (the automations which are responsible for turning the AC OFF when the room is empty) will be disabled until the sleep mode is turned OFF. 
-o	In case the user forgot to turn OFF the sleep mode, there is a time which is determined by the user, so that the sleep mode will be turned OFF at the specified time automatically.
+     
+          o	In case the user forgot to turn OFF the sleep mode, there is a time which is determined by the user, so that the sleep mode will be turned OFF at the specified time automatically.
 
 
 •	Shabbat shalom mode:
