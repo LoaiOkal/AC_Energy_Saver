@@ -1,5 +1,7 @@
 alias: Automation 7_ At chosen time turn off sleep mode
-description: "Turn OFF the AC at the time chosen by the user, therefore in case the user forgot to turn it OFF, it will be turned OFF automatically"
+description: >-
+  Turn OFF the AC at the time chosen by the user, therefore in case the user
+  forgot to turn it OFF, it will be turned OFF automatically
 trigger:
   - platform: time
     at: input_datetime.check_sleep_mode_is_off
@@ -9,4 +11,13 @@ action:
     data: {}
     target:
       entity_id: input_boolean.sleep_mode
+  - service: automation.turn_on
+    data: {}
+    target:
+      entity_id:
+        - >-
+          automation.automation_6_increment_motions_number_when_sensor_is_turned_on
+        - >-
+          automation.automation_6_increment_sounds_number_when_sensor_is_turned_on
+        - automation.automation_2
 mode: single
