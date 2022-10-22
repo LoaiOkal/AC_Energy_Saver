@@ -84,11 +84,3 @@ views:
             name: Temp
           - entity: sensor.black_itag_btn
         title: Living Room
-      - type: entities
-        entities:
-          - entity: button.ac_mode
-          - entity: button.ac_fan
-          - entity: button.ac_minus
-          - entity: button.ac_plus
-          - entity: button.ac_off
-          - entity: button.ac_on
