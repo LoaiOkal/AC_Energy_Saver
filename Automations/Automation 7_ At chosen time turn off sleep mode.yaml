@@ -11,13 +11,4 @@ action:
     data: {}
     target:
       entity_id: input_boolean.sleep_mode
-  - service: automation.turn_on
-    data: {}
-    target:
-      entity_id:
-        - >-
-          automation.automation_6_increment_motions_number_when_sensor_is_turned_on
-        - >-
-          automation.automation_6_increment_sounds_number_when_sensor_is_turned_on
-        - automation.automation_2
 mode: single
